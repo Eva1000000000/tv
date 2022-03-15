@@ -1,0 +1,162 @@
+
+.tv {
+    margin-right: -16px;
+    /* .tv__list */
+    padding-bottom: 173px;
+    @media (max-width: 1220px) {
+        margin-right: 0;
+    }
+
+    &__list {
+        height: 696px;
+        overflow: auto;
+        
+    }
+
+    /* .tv__canal */
+
+    &__canal {
+        max-width: 100%;
+        width: 1180px;
+        height: 162px;
+        background: #F2F2F2;
+        border-radius: 8px;
+        margin-bottom: 16px;
+        display: flex;
+        @media (max-width: 768px) {
+            height: 180px;
+        }
+        @media (max-width: 480px) {
+            height: 240px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+.tv__canal:last-child{
+    margin-bottom: 0;
+}
+.canal {
+
+    /* .canal__img */
+
+    &__img {
+        width: 33%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media (max-width: 1024px) {
+            width: 27%;
+        }
+        @media (max-width: 768px) {
+            width: 35%;
+        }
+    }
+    &__image{
+    }
+    /* .canal__content */
+
+    &__content {
+        width: 67%;
+        
+        @media (max-width: 1024px) {
+            width: 73%;
+        }
+        @media (max-width: 768px) {
+            width: 65%;
+        }
+        @media (max-width: 768px) {
+            width: 100%;
+            padding:0 10px;
+        }
+    }
+
+    /* .canal__title */
+
+    &__title {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        color: #333333;
+        margin: 21px 0 17px;
+        @media (max-width: 768px) {
+            font-size: 18px;
+        }
+        @media (max-width: 768px) {
+            margin-top: 5px;
+           
+        }
+    }
+
+    /* .canal__show */
+
+    &__show {
+        display: flex;
+    }
+
+    /* .canal__show-time */
+
+    &__show-time {
+        font-size: 16px;
+        line-height: 19px;
+        color: #333333;
+        margin-bottom: 12px;
+        margin-right: 16px;
+        @media (max-width: 768px) {
+            font-size: 13px;
+        }
+    }
+
+    /* .canal__show-name */
+
+    &__show-name {
+        font-size: 16px;
+        line-height: 19px;
+        color: #333333;
+        margin-bottom: 12px;
+        @media (max-width: 768px) {
+            font-size: 13px;
+        }
+    }
+}
+.now {
+    color: #E5261E;
+}
+
+
+.tv{
+    display: none;
+}
+.movies.active{
+    display: block;
+}
+.tv.active{
+    display: block;
+}
+
+
+.simplebar-track.simplebar-vertical {
+    background: #F2F2F2;
+    border-radius: 2px;
+    width: 8px;
+}
+.simplebar-content-wrapper{
+    padding-right: 8px;
+}
+
+
+.simplebar-scrollbar:before {
+    position: absolute;
+    content: '';
+    background: #BDBDBD;
+    border-radius: 2px;
+    opacity: 1;
+    width: 4px;
+  }
+
+  .simplebar-scrollbar{
+      height: 500px;
+  }
+
+

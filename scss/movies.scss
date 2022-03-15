@@ -1,0 +1,379 @@
+
+
+.tabs {
+    margin-top: 116px;
+
+    /* .tabs__panel */
+    &__items{
+        display: flex;
+        justify-content: center;
+
+    }
+    &__movies {
+        height: 42px;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 33px;
+        color: #333333;
+        margin-right: 12px;
+        background-color: #FFFFFF;
+        transition: all ease 200ms;
+        @media (max-width: 480px) {
+            font-size: 20px;
+        }
+		}
+
+		/* .tabs__tv */
+
+	&__tv {
+        height: 42px;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 33px;
+        color: #333333;
+        margin-left: 12px;
+        background-color: #FFFFFF;
+        transition: all ease 200ms;
+        @media (max-width: 480px) {
+            font-size: 20px;
+        }
+		}
+
+
+
+    &__panel {
+        margin-top: 32px;
+
+    }
+}
+.tabs__movies.active{
+    color: #E5261E;
+    border-bottom: 2px solid #E5261E;
+}
+.tabs__tv.active{
+    color: #E5261E;
+    border-bottom: 2px solid #E5261E;
+}
+
+.movies {
+    display: none;
+    /* .movies__new */
+
+    &__new {
+        margin-bottom: 96px;
+    }
+
+    /* .movies__title-new */
+
+    &__title-new {
+        margin-bottom: 16px;
+
+    }
+
+    /* .movies__items */
+
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        @media (max-width: 1024px) {
+            justify-content: space-evenly;
+        }
+    }
+
+    /* .movies__cat */
+
+    &__cat {
+        border-radius: 8px;
+        width: 23%;
+        height: 370px;
+        background-image: url(../img/cat.png);
+        @media (max-width: 966px) {
+            margin-right: 50px;
+            // margin-left: 100px;
+            margin-bottom: 100px;
+            width: 28%;
+        }
+        @media (max-width: 768px) {
+            margin-right: 0px;
+            width: 38%;
+        }
+        @media (max-width: 600px) {
+            width: 48%;
+        }
+        @media (max-width: 480px) {
+            width: 200px;
+            height: 300px;
+        }
+    }
+
+    /* .movies__description */
+
+    &__description {
+        padding: 16px;
+        font-size: 16px;
+        line-height: 140%;
+        height: 100%;
+        opacity: 0;
+        visibility: hidden;
+        transform: translate(0,1%);
+        transition: all ease 500ms;
+        
+        
+    }
+
+    /* .movies__name */
+
+    &__name {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-size: 20px;
+        line-height: 24px;
+        color: #333333;
+        @media (max-width: 768px) {
+            font-size: 18px;
+        }
+        
+        @media (max-width: 480px) {
+            font-size: 15px;
+        }
+
+    }
+
+    /* .movies__batman */
+
+    &__batman {
+        border-radius: 8px;
+        width: 23%;
+        height: 370px;
+        background-image: url(../img/batman.png);
+        @media (max-width: 966px) {
+            // margin-right: 100px;
+            margin-left: 50px;
+            margin-bottom: 100px;
+            width: 28%;
+        }
+        @media (max-width: 768px) {
+            margin-left: 0px;
+            width: 38%;
+        }
+        @media (max-width: 600px) {
+            width: 48%;
+        }
+        @media (max-width: 480px) {
+            width: 200px;
+            height: 300px;
+        }
+    }
+
+    /* .movies__hollywood */
+
+    &__hollywood {
+        border-radius: 8px;
+        width: 23%;
+        height: 370px;
+        background-image: url(../img/hollywood.png);
+        @media (max-width: 966px) {
+            margin-right: 50px;
+            // margin-left: 100px;
+            width: 28%;
+        }
+        @media (max-width: 768px) {
+            margin-right: 0px;
+            width: 38%;
+        }
+        @media (max-width: 600px) {
+            width: 48%;
+        }
+        @media (max-width: 480px) {
+            width: 200px;
+            height: 300px;
+            margin-bottom: 100px;
+        }
+    }
+
+    /* .movies__strippers */
+
+    &__strippers {
+        border-radius: 8px;
+        width: 23%;
+        height: 370px;
+        background-image: url(../img/stript.png);
+        @media (max-width: 966px) {
+            // margin-right: 100px;
+            margin-left: 50px;
+            width: 28%;
+        }
+        @media (max-width: 768px) {
+            margin-left: 0px;
+            width: 38%;
+        }
+        @media (max-width: 600px) {
+            width: 48%;
+        }
+        @media (max-width: 480px) {
+            width: 200px;
+            height: 300px;
+        }
+    }
+
+    /* .movies__genres */
+
+    &__genres {
+
+    }
+
+    /* .movies__title-genres */
+
+    &__title-genres {
+        margin-bottom: 16px;
+    }
+
+    /* .movies__genres-items */
+
+    &__genres-items {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 -15px;
+        @media (max-width: 1024px) {
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        
+    }
+
+    /* .movies__comedy */
+
+    &__comedy {
+        margin: 0 15px 30px;
+        position: relative;
+        width: 280px;
+        height: 208px;
+        opacity: 0.8;
+        background: linear-gradient(127.83deg, #F2C94C 8.44%, #F2B14B 51.27%, #F29A4A 91.36%);
+        box-shadow: inset 0px 0px 16px rgba(0, 0, 0, 0.15);
+        border-radius: 6px;
+        transition: all ease 500ms;
+        @media (max-width: 1024px) {
+            width: 43%;
+        }
+        @media (max-width: 480px) {
+            width: 100%;
+        }
+    }
+
+    /* .movies__smail */
+
+    &__smail {
+        
+        z-index: 10;
+        position: absolute;
+        transform: translate(-50%,-50%);
+        top: 50%;
+        left: 50%;
+        
+    }
+
+    /* .movies__genres-name */
+
+    &__genres-name {
+        position: absolute;
+        transform: translate(-50%,-50%);
+        top: 77%;
+        left: 50%;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    /* .movies__drama */
+
+    &__drama {
+        margin: 0 15px 30px;
+        position: relative;
+        width: 280px;
+        height: 208px;
+        background: linear-gradient(127.83deg, #F2994A 8.44%, #EB5757 91.36%);
+        opacity: 0.8;
+        box-shadow: inset 0px 0px 16px rgba(0, 0, 0, 0.15);
+        border-radius: 6px;
+        transition: all ease 500ms;
+        @media (max-width: 1024px) {
+            width: 43%;
+        }
+        @media (max-width: 480px) {
+            width: 100%;
+        }
+    }
+
+    /* .movies__fiction.movies__horror.movies__drama */
+
+    &__fiction {
+        position: relative;
+        margin: 0 15px 30px;
+        width: 280px;
+        height: 208px;
+        background: linear-gradient(127.83deg, #56CCF2 8.44%, #2F80ED 91.36%);
+        opacity: 0.8;
+        box-shadow: inset 0px 0px 16px rgba(0, 0, 0, 0.15);
+        border-radius: 6px;
+        transition: all ease 500ms;
+        @media (max-width: 1024px) {
+            width: 43%;
+        }
+        @media (max-width: 480px) {
+            width: 100%;
+        }
+    }
+
+    /* .movies__horror */
+
+    &__horror {
+        margin: 0 15px 30px;
+        position: relative;
+        width: 280px;
+        height: 208px;
+        background: linear-gradient(127.83deg, #828282 8.44%, #333333 91.36%);
+        opacity: 0.8;
+        box-shadow: inset 0px 0px 16px rgba(0, 0, 0, 0.15);
+        border-radius: 6px;
+        transition: all ease 250ms;
+        margin-bottom: 192px;
+        @media (max-width: 1024px) {
+            width: 43%;
+        }
+        @media (max-width: 480px) {
+            width: 100%;
+        }
+    }
+}
+.title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #333333;
+}
+.movies__item:hover{
+    .movies__description{
+        opacity: 0.8;
+        padding: 16px;
+        font-size: 16px;
+        line-height: 140%;
+        color: #F2F2F2;
+        background: #333333;
+        border-radius: 8px;
+        height: 100%;
+        transform: translate(0,0);
+        visibility: visible;
+        @media (max-width: 480px) {
+            font-size: 13px;
+        }
+    }
+    
+}
+
+.movies__fiction:hover, .movies__horror:hover, .movies__drama:hover, .movies__comedy:hover{
+    opacity: 1;
+}
